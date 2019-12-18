@@ -6,6 +6,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/logo.jpg" >
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,10 +15,10 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light rounded" style="background-color: #000000;">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-            Closet´s
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <a class="navbar-brand" href="index.html  ">
+            <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Lojas Closet´s
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,26 +26,20 @@
     <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(atual)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Preços</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Promoções</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entrar</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown10">
-              <a class="dropdown-item" href="#">Entrar</a>
-              <a class="dropdown-item" href="#">Cadastrar</a>
-              <a class="dropdown-item" href="#">Meus Pedidos</a>
-            </div>
-          </li>
+<!--
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        -->
+          <form class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="O que você procura?" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="img/search-black-18dp/2x/baseline_search_black_18dp.png" width="20" height="20" alt=""></button>
+          </form>
         </ul>
       </div>
       <div class="dropdown">
-          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Entrar
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -52,10 +48,29 @@
             <a class="dropdown-item" href=".html">Meus Pedidos</a>
           </div>
         </div>
-      <button class="btn btn-dark" href="login.html" role="button">
-        <img src="img/add_shopping_cart-24px.svg" width="30" height="30" alt="carrinho">
+      <button class="btn btn-link" href="cadastro.html" role="button">
+        <img src="img/favorite-black-18dp/2x/baseline_favorite_black_18dp.png" alt="carrinho">
+      </button>
+      <button class="btn btn-link" href="cadastro.html" role="button">
+        <img src="img/shopping_cart-black-18dp/2x/baseline_shopping_cart_black_18dp.png" alt="carrinho">
       </button>
     </nav>
+    <div class="nav-scroller bg-white shadow-sm">
+      <nav class="nav nav-underline">
+        <a class="nav-link active" href="#">Dashboard</a>
+        <a class="nav-link" href="#">
+          Amigos
+          <span class="badge badge-pill bg-light align-text-bottom">27</span>
+        </a>
+        <a class="nav-link" href="#">Explorar</a>
+        <a class="nav-link" href="#">Sugestões</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+      </nav>
+    </div>
     <!-- carrosel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -65,16 +80,16 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="i.jpg" alt="Primeiro Slide">
+            <img class="d-block w-100" src="img/baner/bannercloset1.jpg" width="100%" height="800px" alt="Primeiro Slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
+            <img class="d-block w-100" src="img/baner/Bannercloset2.jpg" width="100%" height="800px" alt="Segundo Slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+            <img class="d-block w-100" src="img/baner/bannercloset3.jpg" width="100%" height="800px" alt="Terceiro Slide">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators"  role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Anterior</span>
         </a>
@@ -83,14 +98,40 @@
           <span class="sr-only">Próximo</span>
         </a>
       </div>
-      <!-- Jumbotron -->
-          <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1 class="display-4">Loja Closet´s</h1>
-                  <p class="lead">Roupas multimarcas</p>
+      <!-- cards -->
+      <div class="container">
+        <div class="row">
+            <?php for($x=1;$x<=10;$x++){?>
+                <div class= "col-sm-6" style="max-width: 20rem;margin: 15px 30px;">
+                <img class="card-img-top" src="img/closets_icone/logo.jpg" alt="logo Closet's">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Título especial</h5>
+                        <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                        <a class="text">registrar <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                        </div>
+                    </div>
                 </div>
+                <?php }?>
+        </div>
+    </div>
+              <!-- paginação -->
+              <div id="pag">
+              <nav aria-label="Navegação de página exemplo">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Próximo</a>
+                  </li>
+                </ul>
+              </nav>
               </div>
-              
+              <!-- footer -->
               <footer class="text-muted">
                 <div class="container">
                   <p class="float-right">
@@ -98,6 +139,14 @@
                   </p>
                   <p>Novo por aqui? <a href="cadastro.html">Resgistre-se</a> e siga nosso <a href="https://instagram.com/lojasclosets?igshid=14bnzvijfcd1h">instagram</a>.</p>
                 </div>
+                <nav id="nav-icons">
+                  <ul class="icons">
+                      <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                      <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                      <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                      <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                  </ul>
+              </nav>
               </footer>
             </body>
 </html>

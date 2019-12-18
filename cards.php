@@ -5,6 +5,7 @@
         .card{
             margin left: 150px;
             padding: 10px;
+            box-shadow: 10px 10px 10px #000000;
         }
         
         </style>
