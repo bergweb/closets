@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cadastre-se</title>
+    <title>CADASTRO DE USUÁRIO</title>
 </head>
 <body>
-    <form method="POST" action="cadastre.php">
-    <label>Nome:</label><input type="text " name="nome " id="nome "><br>
-    <br>
-    <label>Sobrenome:</label><input type="text" name="sobrenome " id="sobrenome "><br>
-    <br>
-    <label>E-mail:</label><input type="email" name="email" id="email "><br>
-    <br>
-    <label>Usuário:</label><input type="text" name="usuario " id="usuario "><br>
-    <br>
-    <label>Senha:</label><input type="password" name="senha " id="senha "><br>
-    <br>
-    <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
-    <input type="reset"  value="Limpar">
+    <h1>CADASTRAR USUÁRIO</h1>
+    <form method="POST" action="cadastro.php">
+        <label>Nome: </label>
+        <input type="text" name="nome" maxlength="40" autofocus required/>
+        <label>Sobrenome: </label>
+        <input type="text" name="sobrenome" maxlength="40" required/><br><br>
+        <label>E-mail: </label>
+        <input type="email" name="email" maxlength="50" required/><br><br>
+        <label>CPF: </label>
+        <input type="cpf" name="cpf" maxlength="11" required/><br><br>
+        <label>Login: </label>
+        <input type="text" name="login" maxlength="20" required/><br><br>
+        <label>Senha: </label>
+        <input type="password" name="senha" maxlength="20" required/><br><br>
+        <input type="submit" value="CADASTRAR">
+        <input type="reset"  value="LIMPAR">
+        
+
+
+
     </form>
+    
 </body>
 </html>
