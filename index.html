@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,10 +16,10 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm
         <a class="navbar-brand" href="index.html  ">
             <img src="img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
-            Lojas Closet´s
+            Closet´s
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,15 +27,9 @@
     <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
         <ul class="navbar-nav">
           <li class="nav-item active">
-<!--
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?" aria-label="Pesquisar">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-          </form>
-        -->
-          <form class="search-box">
-            <input class="search-txt" type="text" name="" placeholder="O que você procura?" aria-label="Pesquisar">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="img/search-black-18dp/2x/baseline_search_black_18dp.png" width="20" height="20" alt=""></button>
           </form>
         </ul>
       </div>
@@ -51,29 +44,20 @@
           </div>
         </div>
       <button class="btn btn-link" href="cadastro.html" role="button">
-        <img src="img/favorite-black-18dp/2x/baseline_favorite_black_18dp.png" alt="carrinho">
-      </button>
-      <button class="btn btn-link" href="cadastro.html" role="button">
         <img src="img/shopping_cart-black-18dp/2x/baseline_shopping_cart_black_18dp.png" alt="carrinho">
       </button>
     </nav>
-    <div class="nav-scroller bg-white shadow-sm">
-      <nav class="nav nav-underline">
-        <a class="nav-link active" href="#">Dashboard</a>
-        <a class="nav-link" href="#">
-          Amigos
-          <span class="badge badge-pill bg-light align-text-bottom">27</span>
-        </a>
-        <a class="nav-link" href="#">Explorar</a>
-        <a class="nav-link" href="#">Sugestões</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-      </nav>
-    </div>
-    <!-- carrossel -->
+      <!-- jumbotron -->
+      <center>
+      <div class="jumbotron" id="loja">
+        <h1 class="display-4">Seja Bem Vindo!</h1>
+        <p class="lead">Loja Closet´s</p>
+        <hr class="my-4">
+        <p>Maior loja multimarcas da baixada.</p>
+        <a class="btn btn-primary btn-lg" href="login.html" role="button">Entrar</a>
+      </div>
+    </center>
+        <!-- carrossel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

@@ -2,7 +2,20 @@ body{
     margin: 0px;
     padding: 0px;
 }
+#loja{
+    width: 1024px;
+    position: relative;
+    top: 50px;
+    left: center;
 
+}
+#pag{
+    left: 50px;
+}
+
+#carouselExampleIndicators{
+    top: 100px;
+}
 ul{
     list-style: none;	
 }
@@ -20,6 +33,7 @@ a{
   } */
 
   #myFooter {
+      top: 100px;
     background-color: #3c3d41;
     color: white;
     padding-top: 30px;
@@ -146,6 +160,7 @@ body{
 }
 
 #myFooter{
+    top: 100px;
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
 }
